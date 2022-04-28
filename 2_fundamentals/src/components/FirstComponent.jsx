@@ -3,6 +3,9 @@ const FirstComponent = () => {
 	return (
 		<div>
 			<h3>My First component</h3>
+			<p className="firsParagraph">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</p>
 		</div>
 	)
 }
