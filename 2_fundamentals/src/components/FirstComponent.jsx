@@ -2,12 +2,10 @@
 const FirstComponent = () => {
 	return (
 		<div>
-
-			{/* Comentário em JSX */}
 			<h3>My First component</h3>
 			<p className="firsParagraph">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			</p>
+				</p>
 		</div>
 	)
 }
