@@ -1,3 +1,5 @@
+import ReusedComponent from './ReusedComponent'
+
 // Criamos por padrão uma arrow-function, e para isso colocamos dentro de uma constante
 const FirstComponent = () => {
 	return (
@@ -5,7 +7,8 @@ const FirstComponent = () => {
 			<h3>My First component</h3>
 			<p className="firsParagraph">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-				</p>
+			</p>
+			<ReusedComponent />
 		</div>
 	)
 }
