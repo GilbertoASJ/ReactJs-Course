@@ -5,6 +5,17 @@ const Event = () => {
 		console.log(e)
 	}
 
+	const renderSomething = (x) => {
+
+		if(x) {
+
+			return <h3>renderSomething funcionando!</h3>
+		} else {
+
+			return <h3>renderSomething não está funcionando =(</h3>
+		}
+	}
+
 	return (
 		<>
 			<div>
@@ -27,6 +38,13 @@ const Event = () => {
 				}}>
 					Má prática
 				</button>
+			</div>
+
+			<div>
+				
+				{/* Algo que também pode existir no react é função de renderização, onde podemos criar uma função que retorna jsx ou seja, retorna html */}
+				{renderSomething(true)}
+				{renderSomething(false)}
 			</div>
 		</>
 	)
