@@ -11,6 +11,7 @@ const ListRender = () => {
 	])
 
 	const handleDeleteRandomUser = () => {
+		
 		const randomNumber = Math.floor(Math.random() * 6)
 
 		// Aqui obtemos o valor antigo da variável em questão, através do previous state, ou seja seu antigo estado

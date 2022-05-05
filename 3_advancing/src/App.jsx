@@ -1,6 +1,7 @@
 import ImagesTypes from './components/ImagesTypes' 
 import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
+import ConditionalRender from './components/ConditionalRender'
 
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
             <ImagesTypes />
             <ManageData />
             <ListRender />
+            <ConditionalRender />
         </div>
     );
 }
