@@ -4,11 +4,24 @@ const ListRender = () => {
 
 	const [listItems] = useState(['John Doe', 'Cristian', 'Bob', 'Angela'])
 
-	const [usersList] = useState([
+	const [usersList, setUsersList] = useState([
 		{id: 1, name: 'John Doe', age: '19'},
-		{id: 5, name: 'Daniel', age: '21'},
+		{id: 4, name: 'Daniel', age: '21'},
 		{id: 7, name: 'Johny', age: '26'}
 	])
+
+	const handleDeleteRandomUser = () => {
+		const randomNumber = Math.floor(Math.random() * 6)
+
+		// Aqui obtemos o valor antigo da variável em questão, através do previous state, ou seja seu antigo estado
+		setUsersList((prevUsersList) => {
+
+			// O id em questão que der 'match', ele irá excluir
+			console.log(randomNumber)
+			console.log(prevUsersList.filter((user) => randomNumber !== user.id))
+			return prevUsersList.filter((user) => randomNumber !== user.id)
+		})
+	}
 
 	return (
 		<>
@@ -25,10 +38,12 @@ const ListRender = () => {
 			<ul>
 				{usersList.map((user) => (
 					<li key={user.id}>
-						Nome: {user.name} <strong>▄</strong> Idade: {user.age}
+						Nome: {user.name} <strong>--</strong> Idade: {user.age}
 					</li>
 				))}
 			</ul>
+
+			<button onClick={handleDeleteRandomUser}>Deletar usuário aleatório</button>
 		</>
 	)
 }
