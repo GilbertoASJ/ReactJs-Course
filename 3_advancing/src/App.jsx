@@ -6,6 +6,7 @@ import ListRender from './components/ListRender'
 import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
 import UserInfo from './components/UserInfo'
+import Container from './components/Container'
 
 import './App.css';
 
@@ -41,7 +42,7 @@ function App() {
 
             {/* Loop em array de objetos */}
             {users.map((user) => (
-                
+
                 <UserInfo 
                     key={user.id}
                     age={user.age} 
@@ -50,6 +51,13 @@ function App() {
                     address={user.address} 
                 />
             ))}
+
+            {/* Children props */}
+            <Container testValue="Teste">
+                <p style={{display: 'inline-block'}}>
+                    Parágrafo teste
+                </p>
+            </Container>    
         </div>
     );
 }
