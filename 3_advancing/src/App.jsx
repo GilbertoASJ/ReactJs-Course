@@ -5,6 +5,7 @@ import ManageData from './components/ManageData'
 import ListRender from './components/ListRender'
 import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
+import UserInfo from './components/UserInfo'
 
 import './App.css';
 
@@ -24,6 +25,9 @@ function App() {
 
             {/* Utilizando props em um componente */}
             <ShowUserName userName={currentUserName} />
+
+            {/* Utilizando props com destructuring(desestruturação) */}
+            <UserInfo name="José" age={20} address="SP" />
         </div>
     );
 }
