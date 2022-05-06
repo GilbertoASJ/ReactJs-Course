@@ -15,6 +15,12 @@ function App() {
     // const userName = "Fulano de Tal"
     const [currentUserName] = useState('Ciclano')
 
+    const users = [
+        {id: 1, name: 'Fulano', age: 19, address: 'SP', newUser: false},
+        {id: 2, name: 'Ciclano', age: 22, address: 'SP', newUser: true},
+        {id: 3, name: 'Beltrano', age: 40, address: 'AC', newUser: true}
+    ]
+
     return (
         <div className="App">
             <h3>Seção 3 - Avançando em React</h3>
@@ -32,6 +38,18 @@ function App() {
             {/* Reutilização de componentes */}
             <UserInfo name="João" age={30} address="CE" newUser={true} />
             <UserInfo name="Maria" age={25} address="MG" newUser={false} />
+
+            {/* Loop em array de objetos */}
+            {users.map((user) => (
+                
+                <UserInfo 
+                    key={user.id}
+                    age={user.age} 
+                    name={user.name} 
+                    newUser={user.newUser} 
+                    address={user.address} 
+                />
+            ))}
         </div>
     );
 }

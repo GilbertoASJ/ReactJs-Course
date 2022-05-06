@@ -8,7 +8,7 @@ const UserInfo = ({ name, age, address, newUser }) => {
 				<li>Idade: {age}</li>
 				<li>Endereço: {address}</li>
 			</ul>
-			{newUser && <p>Usuário novo</p>}
+			{newUser && <p><strong>Usuário novo</strong></p>}
 		</>
 	)
 }
