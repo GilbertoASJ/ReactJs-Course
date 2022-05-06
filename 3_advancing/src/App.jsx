@@ -27,7 +27,11 @@ function App() {
             <ShowUserName userName={currentUserName} />
 
             {/* Utilizando props com destructuring(desestruturação) */}
-            <UserInfo name="José" age={20} address="SP" />
+            <UserInfo name="José" age={20} address="SP" newUser={true} />
+
+            {/* Reutilização de componentes */}
+            <UserInfo name="João" age={30} address="CE" newUser={true} />
+            <UserInfo name="Maria" age={25} address="MG" newUser={false} />
         </div>
     );
 }
