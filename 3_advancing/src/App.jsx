@@ -7,6 +7,7 @@ import ConditionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
 import UserInfo from './components/UserInfo'
 import Container from './components/Container'
+import ExecuteFuncion from './components/ExecuteFunction'
 
 import './App.css';
 
@@ -21,6 +22,10 @@ function App() {
         {id: 2, name: 'Ciclano', age: 22, address: 'SP', newUser: true},
         {id: 3, name: 'Beltrano', age: 40, address: 'AC', newUser: true}
     ]
+
+    function showWelcomeMessage() {
+        alert('Seja bem vindo ao sistema');
+    }
 
     return (
         <div className="App">
@@ -58,6 +63,10 @@ function App() {
                     Parágrafo teste
                 </p>
             </Container>    
+
+            {/* Executar função como prop */}
+            <ExecuteFuncion myFunction={showWelcomeMessage} />
+
         </div>
     );
 }
