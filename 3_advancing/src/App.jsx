@@ -10,6 +10,7 @@ import Container from './components/Container'
 import ExecuteFuncion from './components/ExecuteFunction'
 import Message from './components/Message'
 import ChangeMessageState from './components/ChangeMessageState'
+import UserDetails from './components/UserDetails'
 
 import './App.css';
 
@@ -80,6 +81,11 @@ function App() {
             {/* State Lift */}
             <Message msg={message} />
             <ChangeMessageState handleSetMessage={handleSetMessage} />
+
+            <hr />
+
+            {/* Desafio */}
+            <UserDetails />
 
         </div>
     );
