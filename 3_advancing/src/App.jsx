@@ -8,6 +8,8 @@ import ShowUserName from './components/ShowUserName'
 import UserInfo from './components/UserInfo'
 import Container from './components/Container'
 import ExecuteFuncion from './components/ExecuteFunction'
+import Message from './components/Message'
+import ChangeMessageState from './components/ChangeMessageState'
 
 import './App.css';
 
@@ -25,6 +27,14 @@ function App() {
 
     function showWelcomeMessage() {
         alert('Seja bem vindo ao sistema');
+    }
+
+    // Variável para a elevação de state (state lift)
+    const [message, setMessage] = useState()
+
+    const handleSetMessage = (msg) => {
+
+        setMessage(msg);
     }
 
     return (
@@ -66,6 +76,10 @@ function App() {
 
             {/* Executar função como prop */}
             <ExecuteFuncion myFunction={showWelcomeMessage} />
+
+            {/* State Lift */}
+            <Message msg={message} />
+            <ChangeMessageState handleSetMessage={handleSetMessage} />
 
         </div>
     );
