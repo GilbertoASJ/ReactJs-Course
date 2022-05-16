@@ -1,0 +1,12 @@
+div.div_cars {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 64px;
+}
+
+div.div_cars div.car_detail {
+	border: 1px solid black;
+	border-radius: 16px;
+	padding: 64px 82px;
+}
