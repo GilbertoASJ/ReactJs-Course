@@ -1,0 +1,11 @@
+div.principalContent {
+	max-width: 250px;
+	border: 1px solid black;
+	border-radius: 16px;
+	padding: 32px;
+	margin-top: 32px;
+}
+
+div.principalContent p {
+	margin: 12px 0;
+}
