@@ -1,0 +1,12 @@
+/* Normalmente utilizamos o arquivo index.css para fazer os estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    padding-bottom: 500px;
+}
+
+h3 {
+    margin-top: 32px;
+}
