@@ -10,6 +10,7 @@ function App() {
     // Fictional var
     const n = 20;
     const [name] = useState('John Doe');
+    const redTitle = false;
 
     return (
         <div className="App">
@@ -39,10 +40,15 @@ function App() {
             {/* Inline CSS dinâmico com if ternário */}
             <p style={n <= 15 ? {color: 'purple'} : {color: 'blue'}}>
                 CSS inline dinâmico com if ternário
-            </p>
+            </p><br />
 
             <p style={name === 'John Doe' ? {backgroundColor: '#ccc'} : null}>
                 Nome dinâmico com useState
+            </p><br />
+
+            {/* Classe dinâmica */}
+            <p className={redTitle ? "red-title" : "simple-title"}>
+                Parágrafo com classe dinâmica
             </p>
 
         </div>

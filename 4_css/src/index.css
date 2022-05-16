@@ -13,3 +13,15 @@ body {
 h3 {
     color: green;
 }
+
+.red-title {
+    color: red;
+    background-color: black;
+    border: 1px solid red;
+}
+
+.simple-title {
+    color: black;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+}
