@@ -1,8 +1,15 @@
 import './App.css';
 
+import { useState } from 'react'
+
 import ComponentCss from './components/ComponentCss/ComponentCss'
 
+
 function App() {
+
+    // Fictional var
+    const n = 20;
+    const [name] = useState('John Doe');
 
     return (
         <div className="App">
@@ -23,11 +30,21 @@ function App() {
                     backgroundColor: '#222',
                     color: '#fff',
                     padding: '8px 16px',
-                    marginTop: '16px'
+                    margin: '16px 0'
                 }}
             >
                 Exibir mensagem de boas-vindas
             </button>
+
+            {/* Inline CSS dinâmico com if ternário */}
+            <p style={n <= 15 ? {color: 'purple'} : {color: 'blue'}}>
+                CSS inline dinâmico com if ternário
+            </p>
+
+            <p style={name === 'John Doe' ? {backgroundColor: '#ccc'} : null}>
+                Nome dinâmico com useState
+            </p>
+
         </div>
     );
 }
