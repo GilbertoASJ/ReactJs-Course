@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react'
 
 import ComponentCss from './components/ComponentCss/ComponentCss'
+import Title from './components/Title/Title'
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
 
     return (
         <div className="App">
+
+            {/* CSS Modules */}
+            <Title />
 
             {/* CSS global */}
             <h3>React com CSS</h3>
@@ -50,7 +54,6 @@ function App() {
             <p className={redTitle ? "red-title" : "simple-title"}>
                 Parágrafo com classe dinâmica
             </p>
-
         </div>
     );
 }
