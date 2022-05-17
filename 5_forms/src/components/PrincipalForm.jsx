@@ -15,6 +15,7 @@ const PrincipalForm = () => {
 	}
 
 	console.log(email)
+	console.log(password)
 
 	return (
 		<>
@@ -29,7 +30,6 @@ const PrincipalForm = () => {
 						placeholder="Digite seu e-mail"
 						onChange={handleEmail}
 					/>
-					{email}
 				</div>
 
 				{/* 2 - Label envolvendo input */}
@@ -40,6 +40,7 @@ const PrincipalForm = () => {
 						name="senha" 
 						id="senha"
 						placeholder="Digite sua senha"
+						onChange={(e) => {setPassword(e.target.value)}}
 					/>
 				</label>
 
