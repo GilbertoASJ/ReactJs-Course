@@ -14,13 +14,24 @@ const PrincipalForm = () => {
 		setEmail(e.target.value)
 	}
 
-	console.log(email)
-	console.log(password)
+	const handleSubmit = (e) => {
+
+		// Para que não ocorra o reload da página, utilizamos o prevent default
+		e.preventDefault()
+
+		console.log('Enviando o formulário')
+		console.log(email, password)
+	}
+
+	// console.log(email)
+	// console.log(password)
 
 	return (
 		<>
 			{/* 1 - Criação de form */}
-			<form>
+
+			{/* 5 - Envio de form */}
+			<form onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor="email">Email: </label>
 					<input 
@@ -35,6 +46,8 @@ const PrincipalForm = () => {
 				{/* 2 - Label envolvendo input */}
 				<label>
 					<span>Senha: </span>
+
+					{/* 4 - Simplificando do state inline */}
 					<input 
 						type="password" 
 						name="senha" 
