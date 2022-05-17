@@ -15,6 +15,18 @@ const PrincipalForm = () => {
 						placeholder="Digite seu e-mail"
 					/>
 				</div>
+
+				{/* 2 - Label envolvendo input */}
+				<label>
+					<span>Senha: </span>
+					<input 
+						type="password" 
+						name="senha" 
+						id="senha"
+						placeholder="Digite sua senha"
+					/>
+				</label>
+
 				<input type="submit" value="Enviar" />	
 			</form>
 		</>
