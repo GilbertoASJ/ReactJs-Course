@@ -2,11 +2,12 @@ import './PrincipalForm.css'
 
 import { useState } from 'react'
 
-const PrincipalForm = () => {
+const PrincipalForm = ({ currentUser }) => {
 
 	// 3 - Gerenciamento de dados
-	const [email, setEmail] = useState();
-	const [password, setPassword] = useState();
+	// 6 - Controlled inputs
+	const [email, setEmail] = useState(currentUser ? currentUser.email : '');
+	const [password, setPassword] = useState(currentUser ? currentUser.password : '');
 
 	const handleEmail = (e) => {
 
@@ -40,6 +41,7 @@ const PrincipalForm = () => {
 						id="email" 
 						placeholder="Digite seu e-mail"
 						onChange={handleEmail}
+						value={email}
 					/>
 				</div>
 
@@ -54,6 +56,7 @@ const PrincipalForm = () => {
 						id="senha"
 						placeholder="Digite sua senha"
 						onChange={(e) => {setPassword(e.target.value)}}
+						value={password}
 					/>
 				</label>
 

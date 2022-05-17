@@ -7,7 +7,7 @@ function App() {
         <div className="App">
 
             <h3>Forms</h3>
-            <PrincipalForm />
+            <PrincipalForm currentUser={{email: 'johndoe@gmail.com', password: '***'}} />
         </div>
     );
 }
