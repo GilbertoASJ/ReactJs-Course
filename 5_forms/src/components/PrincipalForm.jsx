@@ -22,6 +22,10 @@ const PrincipalForm = ({ currentUser }) => {
 
 		console.log('Enviando o formulário')
 		console.log(email, password)
+
+		// 7 - Limpar formulário
+		setEmail('')
+		setPassword('')
 	}
 
 	// console.log(email)
