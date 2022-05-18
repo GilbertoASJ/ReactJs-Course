@@ -5,6 +5,7 @@ import { useState } from 'react'
 const PrincipalForm = ({ currentUser }) => {
 
 	// 3 - Gerenciamento de dados
+	
 	// 6 - Controlled inputs
 	const [email, setEmail] = useState(currentUser ? currentUser.email : '');
 	const [password, setPassword] = useState(currentUser ? currentUser.password : '');
