@@ -9,6 +9,8 @@ const PrincipalForm = ({ currentUser }) => {
 	const [email, setEmail] = useState(currentUser ? currentUser.email : '');
 	const [password, setPassword] = useState(currentUser ? currentUser.password : '');
 
+	const [message, setMessage] = useState('');
+
 	const handleEmail = (e) => {
 
 		// o 'e', que vem implícito, recebe todos os dados do evento no input
@@ -21,11 +23,12 @@ const PrincipalForm = ({ currentUser }) => {
 		e.preventDefault()
 
 		console.log('Enviando o formulário')
-		console.log(email, password)
+		console.log(email, password, message)
 
 		// 7 - Limpar formulário
 		setEmail('')
 		setPassword('')
+		setMessage('')
 	}
 
 	// console.log(email)
@@ -62,6 +65,19 @@ const PrincipalForm = ({ currentUser }) => {
 						onChange={(e) => {setPassword(e.target.value)}}
 						value={password}
 					/>
+				</label>
+
+				{/* 8 - Textarea */}
+				<label>
+					<span>Mensagem: </span>
+					<textarea 
+						name="message" 
+						placeholder="Digite sua mensagem"
+						id="message"
+						onChange={(e) => {setMessage(e.target.value)}}
+						value={message}
+					>
+					</textarea>
 				</label>
 
 				<input type="submit" value="Enviar" />	
