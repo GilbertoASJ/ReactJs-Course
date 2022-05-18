@@ -8,8 +8,8 @@ const PrincipalForm = ({ currentUser }) => {
 	// 6 - Controlled inputs
 	const [email, setEmail] = useState(currentUser ? currentUser.email : '');
 	const [password, setPassword] = useState(currentUser ? currentUser.password : '');
-
-	const [message, setMessage] = useState('');
+	const [message, setMessage] = useState(currentUser ? currentUser.message : '');
+	const [role, setRole] = useState(currentUser? currentUser.role : '');
 
 	const handleEmail = (e) => {
 
@@ -23,7 +23,7 @@ const PrincipalForm = ({ currentUser }) => {
 		e.preventDefault()
 
 		console.log('Enviando o formulário')
-		console.log(email, password, message)
+		console.log(email, password, message, role)
 
 		// 7 - Limpar formulário
 		setEmail('')
@@ -78,6 +78,20 @@ const PrincipalForm = ({ currentUser }) => {
 						value={message}
 					>
 					</textarea>
+				</label>
+
+				{/* 9 - Select */}
+				<label>
+					<span>Função no sistema</span>
+					<select 
+						name="role"
+						onChange={(e) => {setRole(e.target.value)}}
+						value={role}
+					>
+						<option value="user">Usuário</option>
+						<option value="editor">Editor</option>
+						<option value="admin">Administrador</option>
+					</select>
 				</label>
 
 				<input type="submit" value="Enviar" />	
