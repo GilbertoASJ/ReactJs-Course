@@ -44,6 +44,16 @@
       "name": "Cadeira",
       "price": "350",
       "id": 9
+    },
+    {
+      "name": "Camisa Verde",
+      "price": "60",
+      "id": 10
+    },
+    {
+      "name": "Moletom",
+      "price": "119",
+      "id": 11
     }
   ]
 }
