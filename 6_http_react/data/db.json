@@ -24,6 +24,26 @@
       "name": "Calça jeans azul",
       "price": "77",
       "id": 5
+    },
+    {
+      "name": "Blusa vermelha",
+      "price": "19.90",
+      "id": 6
+    },
+    {
+      "name": "Blusa vermelha",
+      "price": "19.90",
+      "id": 7
+    },
+    {
+      "name": "Teclado",
+      "price": "79.90",
+      "id": 8
+    },
+    {
+      "name": "Cadeira",
+      "price": "350",
+      "id": 9
     }
   ]
 }

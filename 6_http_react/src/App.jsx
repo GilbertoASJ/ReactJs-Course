@@ -43,7 +43,12 @@ function App() {
             body: JSON.stringify(product)
         })
 
-        console.log(product, products)
+        // 3 - Carregamento dinâmico
+        const addedProduct = await res.json()
+        setProducts((prevProducts) => [...prevProducts, addedProduct])
+
+        setProductName('')
+        setProductPrice('')
     }
 
     return (
