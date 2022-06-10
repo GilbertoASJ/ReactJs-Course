@@ -54,6 +54,11 @@
       "name": "Moletom",
       "price": "119",
       "id": 11
+    },
+    {
+      "name": "Monitor 20 polegadas",
+      "price": "159",
+      "id": 12
     }
   ]
 }
