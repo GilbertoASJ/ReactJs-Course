@@ -10,7 +10,7 @@ function App() {
 
     const [products, setProducts] = useState([])
 
-    const { data: items, httpConfig } = useFetch(url)
+    const { data: items, httpConfig, loading } = useFetch(url)
     const [productName, setProductName] = useState("")
     const [productPrice, setProductPrice] = useState("")
 
@@ -52,25 +52,30 @@ function App() {
         // const addedProduct = await res.json()
         // setProducts((prevProducts) => [...prevProducts, addedProduct])
 
-        // setProductName('')
-        // setProductPrice('')
-
         // 5 - Refatorando POST com o hook
         httpConfig(product, 'POST')
+
+        setProductName('')
+        setProductPrice('')
     }
 
     return (
         <div className="App">
             <h2>Lista de produtos</h2>
 
-            <ul>
-                {items && items.map((product) => (
+            {/* 6 - Loading */}
+            {loading && <p>...Carregando dados...</p>}
 
-                    <li key={product.id}>
-                        {product.name} - R$: {product.price}
-                    </li>
-                ))}
-            </ul>
+            {!loading && (
+                <ul>
+                    {items && items.map((product) => (
+
+                        <li key={product.id}>
+                            {product.name} - R$: {product.price}
+                        </li>
+                    ))}
+                </ul>
+            )}
 
             <div>
                 <form onSubmit={handleSubmit}>

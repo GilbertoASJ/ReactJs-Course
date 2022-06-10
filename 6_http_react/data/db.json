@@ -59,6 +59,31 @@
       "name": "Monitor 20 polegadas",
       "price": "159",
       "id": 12
+    },
+    {
+      "name": "Bermuda",
+      "price": "79",
+      "id": 13
+    },
+    {
+      "name": "Bermuda",
+      "price": "79",
+      "id": 14
+    },
+    {
+      "name": "Meias",
+      "price": "19.90",
+      "id": 15
+    },
+    {
+      "name": "Celular",
+      "price": "599",
+      "id": 16
+    },
+    {
+      "name": "Tablet",
+      "price": "499",
+      "id": 17
     }
   ]
 }
