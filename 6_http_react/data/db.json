@@ -14,26 +14,6 @@
       "name": "Mousepad",
       "price": "119",
       "id": 3
-    },
-    {
-      "name": "Suporte notebook",
-      "price": "80",
-      "id": 4
-    },
-    {
-      "name": "Cooler",
-      "price": "59",
-      "id": 5
-    },
-    {
-      "name": "Moletom",
-      "price": "199",
-      "id": 7
-    },
-    {
-      "name": "Calça jeans azul",
-      "price": "99",
-      "id": 8
     }
   ]
 }
