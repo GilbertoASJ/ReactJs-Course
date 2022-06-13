@@ -59,6 +59,12 @@ function App() {
         setProductPrice('')
     }
 
+    // Removendo produtos
+    const removeProduct = (productId) => {
+
+        httpConfig(productId, 'DELETE')
+    }
+
     return (
         <div className="App">
             <h2>Lista de produtos</h2>
@@ -73,7 +79,13 @@ function App() {
                     {items && items.map((product) => (
 
                         <li key={product.id}>
-                            {product.name} - R$: {product.price}
+                            {product.name} <br /> - <br /> R$: {product.price}
+
+                            <br /><br />
+
+                            <button onClick={() => removeProduct(product.id)}>
+                                Remover produto
+                            </button>
                         </li>
                     ))}
                 </ul>

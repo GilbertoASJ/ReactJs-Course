@@ -1,49 +1,39 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
+      "name": "Monitor",
+      "price": "179.99",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Calça vermelha",
-      "price": 90
+      "name": "Teclado",
+      "price": "99.50",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Boné aba reta",
-      "price": 29.9
+      "name": "Mousepad",
+      "price": "119",
+      "id": 3
     },
     {
-      "name": "Camisa manga longa",
-      "price": "45.90",
+      "name": "Suporte notebook",
+      "price": "80",
       "id": 4
     },
     {
-      "name": "Calça jeans azul",
-      "price": "77",
+      "name": "Cooler",
+      "price": "59",
       "id": 5
     },
     {
-      "name": "Blusa vermelha",
-      "price": "19.90",
-      "id": 6
-    },
-    {
       "name": "Moletom",
-      "price": "79.99",
+      "price": "199",
       "id": 7
     },
     {
-      "name": "Calça jeans preta",
-      "price": "89",
+      "name": "Calça jeans azul",
+      "price": "99",
       "id": 8
-    },
-    {
-      "name": "Calça jeans preta",
-      "price": "89",
-      "id": 9
     }
   ]
 }
