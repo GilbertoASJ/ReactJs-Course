@@ -10,7 +10,7 @@ function App() {
 
     const [products, setProducts] = useState([])
 
-    const { data: items, httpConfig, loading } = useFetch(url)
+    const { data: items, httpConfig, loading, error } = useFetch(url)
     const [productName, setProductName] = useState("")
     const [productPrice, setProductPrice] = useState("")
 
@@ -63,10 +63,12 @@ function App() {
         <div className="App">
             <h2>Lista de produtos</h2>
 
+            {error && <p>{error}</p>}
+
             {/* 6 - Loading */}
             {loading && <img src="loading.svg" alt="Loading" height="32px" />}
 
-            {!loading && (
+            {!error && (
                  <ul>
                     {items && items.map((product) => (
 

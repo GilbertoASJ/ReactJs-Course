@@ -31,114 +31,19 @@
       "id": 6
     },
     {
-      "name": "Blusa vermelha",
-      "price": "19.90",
+      "name": "Moletom",
+      "price": "79.99",
       "id": 7
     },
     {
-      "name": "Teclado",
-      "price": "79.90",
+      "name": "Calça jeans preta",
+      "price": "89",
       "id": 8
     },
     {
-      "name": "Cadeira",
-      "price": "350",
+      "name": "Calça jeans preta",
+      "price": "89",
       "id": 9
-    },
-    {
-      "name": "Camisa Verde",
-      "price": "60",
-      "id": 10
-    },
-    {
-      "name": "Moletom",
-      "price": "119",
-      "id": 11
-    },
-    {
-      "name": "Monitor 20 polegadas",
-      "price": "159",
-      "id": 12
-    },
-    {
-      "name": "Bermuda",
-      "price": "79",
-      "id": 13
-    },
-    {
-      "name": "Bermuda",
-      "price": "79",
-      "id": 14
-    },
-    {
-      "name": "Meias",
-      "price": "19.90",
-      "id": 15
-    },
-    {
-      "name": "Celular",
-      "price": "599",
-      "id": 16
-    },
-    {
-      "name": "Tablet",
-      "price": "499",
-      "id": 17
-    },
-    {
-      "name": "Mochila",
-      "price": "59",
-      "id": 18
-    },
-    {
-      "name": "Jaqueta",
-      "price": "119",
-      "id": 19
-    },
-    {
-      "name": "Produto teste 1",
-      "price": "9.99",
-      "id": 20
-    },
-    {
-      "name": "Suporte monitor",
-      "price": "49",
-      "id": 21
-    },
-    {
-      "name": "Suporte microfone",
-      "price": "69",
-      "id": 22
-    },
-    {
-      "name": "Suporte microfone",
-      "price": "69",
-      "id": 23
-    },
-    {
-      "name": "Suporte microfone",
-      "price": "69",
-      "id": 24
-    },
-    {
-      "name": "Suporte microfone",
-      "price": "69",
-      "id": 25
-    },
-    {
-      "name": "Mousepad",
-      "price": "56",
-      "id": 26
-    },
-    {
-      "name": "Pano de prato",
-      "price": "6.50",
-      "id": 27
-    },
-    {
-      "name": "Test",
-      "price": "1",
-      "id": 28
     }
   ]
 }
