@@ -84,6 +84,61 @@
       "name": "Tablet",
       "price": "499",
       "id": 17
+    },
+    {
+      "name": "Mochila",
+      "price": "59",
+      "id": 18
+    },
+    {
+      "name": "Jaqueta",
+      "price": "119",
+      "id": 19
+    },
+    {
+      "name": "Produto teste 1",
+      "price": "9.99",
+      "id": 20
+    },
+    {
+      "name": "Suporte monitor",
+      "price": "49",
+      "id": 21
+    },
+    {
+      "name": "Suporte microfone",
+      "price": "69",
+      "id": 22
+    },
+    {
+      "name": "Suporte microfone",
+      "price": "69",
+      "id": 23
+    },
+    {
+      "name": "Suporte microfone",
+      "price": "69",
+      "id": 24
+    },
+    {
+      "name": "Suporte microfone",
+      "price": "69",
+      "id": 25
+    },
+    {
+      "name": "Mousepad",
+      "price": "56",
+      "id": 26
+    },
+    {
+      "name": "Pano de prato",
+      "price": "6.50",
+      "id": 27
+    },
+    {
+      "name": "Test",
+      "price": "1",
+      "id": 28
     }
   ]
 }

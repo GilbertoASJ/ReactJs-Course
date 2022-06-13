@@ -64,10 +64,10 @@ function App() {
             <h2>Lista de produtos</h2>
 
             {/* 6 - Loading */}
-            {loading && <p>...Carregando dados...</p>}
+            {loading && <img src="loading.svg" alt="Loading" height="32px" />}
 
             {!loading && (
-                <ul>
+                 <ul>
                     {items && items.map((product) => (
 
                         <li key={product.id}>
@@ -85,7 +85,8 @@ function App() {
                             type="text" 
                             value={productName} 
                             name="productName" 
-                            onChange={(e) => {setProductName(e.target.value)}} 
+                            onChange={(e) => {setProductName(e.target.value)}}
+                            required 
                         />
                     </label>
 
@@ -98,12 +99,15 @@ function App() {
                             value={productPrice} 
                             name="productPrice" 
                             onChange={(e) => {setProductPrice(e.target.value)}} 
+                            required
                         />
                     </label>
 
                     <br />
 
-                    <input type="submit" value="Criar produto" />
+                    {/* 7 - State de loading no POST */}
+                    {loading && <input type="submit" disabled value="Aguarde" />}
+                    {!loading && <input type="submit" value="Criar produto" />}
                 </form>
             </div>                                    
         </div>
