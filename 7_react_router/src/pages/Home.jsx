@@ -1,8 +1,30 @@
+import './Home.css'
+
+import { Link } from 'react-router-dom'
+import { useFetch } from '../hooks/useFetch'
+
 const Home = () => {
+
+	// Carregamento de dados
+	const url = 'http://localhost:3000/products'
+	const {data: items, loading, error} = useFetch(url)
 
 	return (
 		<>
-			<h3>Página inicial</h3>
+			<h2>Home - Produtos:</h2>
+			{error && <p>{error}</p>}
+
+			<ul className="products">
+				
+				{items && items.map((item) => (
+
+					<li key={item.id}>
+						
+						<h4>{item.name}</h4>
+						<p>R$ - {item.price}</p>
+					</li>	
+				))}
+			</ul>
 		</>
 	)
 }

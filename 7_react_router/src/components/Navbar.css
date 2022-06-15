@@ -2,13 +2,14 @@ nav {
 	display: flex;
 	justify-content: center;
 	gap:  16px;
+	margin-top: 32px;
 }
 
 nav a {
 	color: black;
 	text-decoration: none;
 	border-bottom: 1px solid black;
-	padding: 8px;
+	padding: 8px 16px;
 	transition: .5s;
 }
 

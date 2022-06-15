@@ -1,0 +1,13 @@
+ul.products {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap:  8px;
+	flex-wrap: wrap;
+}
+
+ul.products li {
+	padding: 16px;
+	width: 100px;
+	border: 1px solid black;
+}
