@@ -2,7 +2,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	gap:  16px;
-	margin-top: 32px;
+	margin: 32px 0;
 }
 
 nav a {

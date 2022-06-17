@@ -7,9 +7,11 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Product from './pages/Product'
 import Reviews from './pages/Reviews'
+import Search from './pages/Search'
 import NotFound from './pages/NotFound'
 
 import Navbar from './components/Navbar'
+import SearchForm from './components/SearchForm'
 
 function App() {
     return (
@@ -19,6 +21,7 @@ function App() {
                 {/* Quando o componente possui elemento do react route, 
                 ele fica dentro de browserRouter */}
                 <Navbar />
+                <SearchForm />
 
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -29,6 +32,9 @@ function App() {
 
                     {/* Rota dinâmica */}
                     <Route path="/products/:id" element={<Product />} />
+
+                    {/* Search */}
+                    <Route path="/search" element={<Search />} />
 
                     {/* Rota não encontrada - 404 */}
                     <Route path="*" element={<NotFound />} />
