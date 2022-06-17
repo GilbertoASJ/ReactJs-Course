@@ -12,7 +12,9 @@ const Home = () => {
 	return (
 		<>
 			<h2>Home - Produtos:</h2>
+			
 			{error && <p>{error}</p>}
+			{loading && <p>Carregando dados</p>}
 
 			<ul className="products">
 				
