@@ -36,7 +36,7 @@ function App() {
                     {/* Search */}
                     <Route path="/search" element={<Search />} />
 
-                    {/* Redirect */}
+                    {/* Redirect - redireciona uma rota antiga para a nova */}
                     <Route path="/company" element={<Navigate to="/about" />} />
 
                     {/* Rota não encontrada - 404 */}
