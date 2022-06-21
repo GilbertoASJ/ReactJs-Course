@@ -7,10 +7,11 @@ const Search = () => {
 	const url = `http://localhost:3000/products?${searchParams}`
 
 	const {data: items, loading, error} = useFetch(url)
+	const searchWordReplaced = searchParams.toString().replace('q=', '')
 
 	return (
 		<>
-			<h3>Resultados disponíveis: </h3>
+			<h3>Resultados disponíveis para '{searchWordReplaced}'</h3>
 
 			{error && <p>{error}</p>}
 			{loading && <p>Carregando dados</p>}

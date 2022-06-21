@@ -1,7 +1,7 @@
 import './App.css';
 
 // 1 - Configurações do React Router
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -35,6 +35,9 @@ function App() {
 
                     {/* Search */}
                     <Route path="/search" element={<Search />} />
+
+                    {/* Redirect */}
+                    <Route path="/company" element={<Navigate to="/about" />} />
 
                     {/* Rota não encontrada - 404 */}
                     <Route path="*" element={<NotFound />} />
