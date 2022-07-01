@@ -18,6 +18,7 @@ export const TitleColorContextProvider = ({children}) => {
 
 	// O useReducer nos entrega uma maneira de alterar o estado, e ja inicia com um valor
 	const [state, dispatch] = useReducer(titleColorReducer, {color: 'red'})
+	
 	console.log('Title Color Context:', state)
 
 	return (
