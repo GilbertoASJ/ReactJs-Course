@@ -18,16 +18,43 @@ const HookUserReducer = () => {
 
 	const taskReducer = (state, action) => {
 
+		switch(action.type) {
+			case 'ADD':
+				const newTask = {
+					id: Math.random(),
+					text: taskText
+				}
+
+				setTaskText('');
+
+				return [...state, newTask]
+				break;
+
+			case 'DELETE':
+
+				return state.filter((task) => {task.id !== action.id})
+				break;
+
+			default:
+
+				return state;
+				break;
+		}
 	}
 
-	const [tasks, dispatchTasks] = useReducer(taskReducer, initialTasks);
 	const [taskText, setTaskText] = useState("");
-
+	const [tasks, dispatchTasks] = useReducer(taskReducer, initialTasks);
+	
 	const handleSubmit = (e) => {
 
 		e.preventDefault();
 
-		dispatchTasks()
+		dispatchTasks({type: 'ADD'})
+	}
+
+	const removeTask = (id) => {
+
+		dispatchTasks({type: 'DELETE', id: id})
 	}
 
 	return (
@@ -50,7 +77,7 @@ const HookUserReducer = () => {
 
 			{tasks.map((task) => (
 
-				<li key={task.id}>
+				<li key={task.id} onDoubleClick={() => removeTask(task.id)}>
 					{task.text}
 				</li>
 			))}
