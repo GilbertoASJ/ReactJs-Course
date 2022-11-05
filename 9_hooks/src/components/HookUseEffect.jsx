@@ -16,6 +16,13 @@ const HookUseEffect = () => {
 		setNumber(number + 1)
 	}
 
+	// 2 - useEffect com array de dependências vazio
+	useEffect(() => {
+
+		console.log('Serei executado apenas uma vez, ao carregar da página');
+
+	}, [])
+
 	return (
 		<>
 			<hr />
