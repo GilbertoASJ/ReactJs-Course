@@ -34,6 +34,20 @@ const HookUseEffect = () => {
 
 	}, [ageUser])
 
+	// 4 - cleanup useEffect
+	// useEffect(() => {
+
+	// 	const timer = setTimeout(() => {
+
+	// 		setAgeUser(ageUser + 1)
+	// 		console.log('Hello World!!')
+			
+	// 	}, 3000)
+
+	// 	return () => clearTimeout(timer)
+
+	// }, [ageUser])
+
 	return (
 		<>
 			<hr />
