@@ -23,12 +23,25 @@ const HookUseEffect = () => {
 
 	}, [])
 
+	// 3 - item no array de dependências
+	const [ageUser, setAgeUser] = useState(0);
+
+	useEffect(() => {
+
+		if(ageUser > 0) {
+			console.log('Sou executado quando a idade muda!')
+		}
+
+	}, [ageUser])
+
 	return (
 		<>
 			<hr />
 			<h3>Use Effect</h3>
 			<h4>Número: {number}</h4>
+			<h4>Idade: {ageUser}</h4>
 			<button onClick={incrementNumber}>Incrementar número</button>
+			<button onClick={() => {setAgeUser(ageUser + 1)}}>Incrementar Idade</button>
 		</>
 	)
 }
