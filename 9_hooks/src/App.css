@@ -12,3 +12,7 @@ body {
   /* To scroll page */
   margin-bottom: 400px;
 }
+
+.useRefForm input[type=email]:focus {
+  background-color: #ccc;
+}

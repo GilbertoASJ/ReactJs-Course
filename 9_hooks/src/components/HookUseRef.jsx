@@ -13,9 +13,21 @@ const HookUseRef = () => {
 		numberRef.current = numberRef.current + 1;
 	})
 
+	// 2 - useRef e DOM
+	const inputRef = useRef();
+	const [email, setEmail] = useState();
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		setEmail('');
+		inputRef.current.focus();
+	}
+
 	return (
 		<>
 			<hr />
+			{/* 1 - useRef */}
 			<h3>use Ref</h3>
 			<p>O componente renderizou {numberRef.current} vezes.</p>
 			<p>Contador 1: {counter}</p>
@@ -26,6 +38,20 @@ const HookUseRef = () => {
 			<button onClick={() => {setCounterB(counterB + 1)}}>
 				Incrementar Contador 2
 			</button>
+
+			{/* 2 - useRef e DOM */}
+			<form className="useRefForm" onSubmit={handleSubmit} style={{marginTop: '16px'}}>
+				<label>
+					E-mail:
+					<input 
+						type="email" 
+						ref={inputRef} 
+						value={email} 
+						onChange={(e) => setEmail(e.target.value)}
+					/>
+				</label>
+				<input type="submit" value="Enviar" />
+			</form>
 		</>
 	)
 }
